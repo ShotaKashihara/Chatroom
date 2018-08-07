@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChatroomViewController.swift
 //  Chatroom
 //
 //  Created by Shota Kashihara on 2018/08/08.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChatroomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

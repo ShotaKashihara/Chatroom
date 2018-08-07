@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		39F5FAE739C555ADD65D0B1C /* Pods_Chatroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */; };
 		CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE762119F74900ACEF02 /* AppDelegate.swift */; };
-		CCEFBE792119F74900ACEF02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE782119F74900ACEF02 /* ViewController.swift */; };
-		CCEFBE7C2119F74900ACEF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7A2119F74900ACEF02 /* Main.storyboard */; };
+		CCEFBE792119F74900ACEF02 /* ChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE782119F74900ACEF02 /* ChatroomViewController.swift */; };
+		CCEFBE7C2119F74900ACEF02 /* ChatroomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7A2119F74900ACEF02 /* ChatroomViewController.storyboard */; };
 		CCEFBE7E2119F74C00ACEF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */; };
 		CCEFBE812119F74C00ACEF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */; };
 		CCEFBE892119F7AE00ACEF02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE882119F7AD00ACEF02 /* GoogleService-Info.plist */; };
@@ -21,8 +21,8 @@
 		A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEFBE732119F74900ACEF02 /* Chatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEFBE762119F74900ACEF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCEFBE782119F74900ACEF02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCEFBE7B2119F74900ACEF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCEFBE782119F74900ACEF02 /* ChatroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomViewController.swift; sourceTree = "<group>"; };
+		CCEFBE7B2119F74900ACEF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChatroomViewController.storyboard; sourceTree = "<group>"; };
 		CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCEFBE802119F74C00ACEF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCEFBE822119F74C00ACEF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 			children = (
 				CCEFBE882119F7AD00ACEF02 /* GoogleService-Info.plist */,
 				CCEFBE762119F74900ACEF02 /* AppDelegate.swift */,
-				CCEFBE782119F74900ACEF02 /* ViewController.swift */,
-				CCEFBE7A2119F74900ACEF02 /* Main.storyboard */,
+				CCEFBE782119F74900ACEF02 /* ChatroomViewController.swift */,
+				CCEFBE7A2119F74900ACEF02 /* ChatroomViewController.storyboard */,
 				CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */,
 				CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */,
 				CCEFBE822119F74C00ACEF02 /* Info.plist */,
@@ -155,7 +155,7 @@
 				CCEFBE812119F74C00ACEF02 /* LaunchScreen.storyboard in Resources */,
 				CCEFBE892119F7AE00ACEF02 /* GoogleService-Info.plist in Resources */,
 				CCEFBE7E2119F74C00ACEF02 /* Assets.xcassets in Resources */,
-				CCEFBE7C2119F74900ACEF02 /* Main.storyboard in Resources */,
+				CCEFBE7C2119F74900ACEF02 /* ChatroomViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCEFBE792119F74900ACEF02 /* ViewController.swift in Sources */,
+				CCEFBE792119F74900ACEF02 /* ChatroomViewController.swift in Sources */,
 				CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,12 +230,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCEFBE7A2119F74900ACEF02 /* Main.storyboard */ = {
+		CCEFBE7A2119F74900ACEF02 /* ChatroomViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCEFBE7B2119F74900ACEF02 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ChatroomViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */ = {
@@ -371,7 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNE6426T3;
 				INFOPLIST_FILE = Chatroom/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -387,7 +390,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNE6426T3;
 				INFOPLIST_FILE = Chatroom/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
