@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,12 +18,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GFM-k4-fVM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-RC-Eih">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="60" id="cx4-8N-A9f" customClass="ChatTableViewCell" customModule="Chatroom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cx4-8N-A9f" id="IuB-fI-rLn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4o-p0-RDu">
+                                                    <rect key="frame" x="257" y="11" width="103" height="38"/>
+                                                    <color key="backgroundColor" red="0.56078431370000004" green="0.81960784310000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sod-Gd-GNM">
+                                                    <rect key="frame" x="265" y="19" width="87" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z4o-p0-RDu" firstAttribute="bottom" secondItem="sod-Gd-GNM" secondAttribute="bottom" constant="8" id="OBX-oQ-LLD"/>
+                                                <constraint firstItem="sod-Gd-GNM" firstAttribute="top" secondItem="IuB-fI-rLn" secondAttribute="topMargin" constant="8" id="XIB-NL-vE8"/>
+                                                <constraint firstItem="z4o-p0-RDu" firstAttribute="leading" secondItem="sod-Gd-GNM" secondAttribute="leading" constant="-8" id="ZnU-an-Kxa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sod-Gd-GNM" secondAttribute="bottom" constant="8" id="h1J-ta-4ub"/>
+                                                <constraint firstItem="sod-Gd-GNM" firstAttribute="trailing" secondItem="IuB-fI-rLn" secondAttribute="trailingMargin" constant="-8" id="lQN-Ed-j7U"/>
+                                                <constraint firstItem="z4o-p0-RDu" firstAttribute="trailing" secondItem="sod-Gd-GNM" secondAttribute="trailing" constant="8" id="nsl-M9-ukT"/>
+                                                <constraint firstItem="z4o-p0-RDu" firstAttribute="top" secondItem="sod-Gd-GNM" secondAttribute="top" constant="-8" id="wuQ-Ta-TcS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="ownTextLabel" destination="sod-Gd-GNM" id="53P-O3-8zy"/>
+                                            <outlet property="textBackgroundView" destination="z4o-p0-RDu" id="Cas-WL-n1C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l0z-RC-Eih" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0o6-S4-szq"/>
+                            <constraint firstItem="GFM-k4-fVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2o3-Ut-nGy"/>
+                            <constraint firstItem="GFM-k4-fVM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C9M-3N-mOJ"/>
+                            <constraint firstItem="l0z-RC-Eih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e02-mJ-X6M"/>
+                            <constraint firstItem="l0z-RC-Eih" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kmW-WD-c9L"/>
+                            <constraint firstItem="GFM-k4-fVM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qJ7-y1-TzS"/>
+                            <constraint firstItem="GFM-k4-fVM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ssy-nu-Wqi"/>
+                            <constraint firstItem="l0z-RC-Eih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wuH-At-1Dq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="l0z-RC-Eih" id="vMM-bD-RJw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="576" height="1024"/>
+    </resources>
 </document>

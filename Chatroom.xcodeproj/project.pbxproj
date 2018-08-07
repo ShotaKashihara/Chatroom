@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39F5FAE739C555ADD65D0B1C /* Pods_Chatroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */; };
+		CCD62C2F2119FE57007AE890 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD62C2E2119FE57007AE890 /* ChatTableViewCell.swift */; };
 		CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE762119F74900ACEF02 /* AppDelegate.swift */; };
 		CCEFBE792119F74900ACEF02 /* ChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE782119F74900ACEF02 /* ChatroomViewController.swift */; };
 		CCEFBE7C2119F74900ACEF02 /* ChatroomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7A2119F74900ACEF02 /* ChatroomViewController.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		7751292BD49AEF954C9BCC2A /* Pods-Chatroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom.release.xcconfig"; sourceTree = "<group>"; };
 		A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD62C2E2119FE57007AE890 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		CCEFBE732119F74900ACEF02 /* Chatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEFBE762119F74900ACEF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCEFBE782119F74900ACEF02 /* ChatroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */,
 				CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */,
 				CCEFBE822119F74C00ACEF02 /* Info.plist */,
+				CCD62C2E2119FE57007AE890 /* ChatTableViewCell.swift */,
 			);
 			path = Chatroom;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD62C2F2119FE57007AE890 /* ChatTableViewCell.swift in Sources */,
 				CCEFBE792119F74900ACEF02 /* ChatroomViewController.swift in Sources */,
 				CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */,
 			);
@@ -378,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -397,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
