@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39F5FAE739C555ADD65D0B1C /* Pods_Chatroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */; };
+		CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE762119F74900ACEF02 /* AppDelegate.swift */; };
+		CCEFBE792119F74900ACEF02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEFBE782119F74900ACEF02 /* ViewController.swift */; };
+		CCEFBE7C2119F74900ACEF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7A2119F74900ACEF02 /* Main.storyboard */; };
+		CCEFBE7E2119F74C00ACEF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */; };
+		CCEFBE812119F74C00ACEF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */; };
+		CCEFBE892119F7AE00ACEF02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEFBE882119F7AD00ACEF02 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7751292BD49AEF954C9BCC2A /* Pods-Chatroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom.release.xcconfig"; sourceTree = "<group>"; };
+		A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEFBE732119F74900ACEF02 /* Chatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEFBE762119F74900ACEF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCEFBE782119F74900ACEF02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCEFBE7B2119F74900ACEF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCEFBE802119F74C00ACEF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCEFBE822119F74C00ACEF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEFBE882119F7AD00ACEF02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDE6273754A6B40C35BCA9A7 /* Pods-Chatroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCEFBE702119F74900ACEF02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F5FAE739C555ADD65D0B1C /* Pods_Chatroom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A59B3DB4DE78385F53271768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2E20504AB79A0F4D413D1E2 /* Pods_Chatroom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEFBE6A2119F74800ACEF02 = {
+			isa = PBXGroup;
+			children = (
+				CCEFBE752119F74900ACEF02 /* Chatroom */,
+				CCEFBE742119F74900ACEF02 /* Products */,
+				ED169DB6590777D8B1E75AF0 /* Pods */,
+				A59B3DB4DE78385F53271768 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCEFBE742119F74900ACEF02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEFBE732119F74900ACEF02 /* Chatroom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCEFBE752119F74900ACEF02 /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				CCEFBE882119F7AD00ACEF02 /* GoogleService-Info.plist */,
+				CCEFBE762119F74900ACEF02 /* AppDelegate.swift */,
+				CCEFBE782119F74900ACEF02 /* ViewController.swift */,
+				CCEFBE7A2119F74900ACEF02 /* Main.storyboard */,
+				CCEFBE7D2119F74C00ACEF02 /* Assets.xcassets */,
+				CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */,
+				CCEFBE822119F74C00ACEF02 /* Info.plist */,
+			);
+			path = Chatroom;
+			sourceTree = "<group>";
+		};
+		ED169DB6590777D8B1E75AF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDE6273754A6B40C35BCA9A7 /* Pods-Chatroom.debug.xcconfig */,
+				7751292BD49AEF954C9BCC2A /* Pods-Chatroom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCEFBE722119F74900ACEF02 /* Chatroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEFBE852119F74C00ACEF02 /* Build configuration list for PBXNativeTarget "Chatroom" */;
+			buildPhases = (
+				6F6C996CC02B4D57696BDD65 /* [CP] Check Pods Manifest.lock */,
+				CCEFBE6F2119F74900ACEF02 /* Sources */,
+				CCEFBE702119F74900ACEF02 /* Frameworks */,
+				CCEFBE712119F74900ACEF02 /* Resources */,
+				1B54F016D3DD3F0C924F6D12 /* [CP] Embed Pods Frameworks */,
+				89FA9807C7FDDBD43BC3A6C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chatroom;
+			productName = Chatroom;
+			productReference = CCEFBE732119F74900ACEF02 /* Chatroom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCEFBE6B2119F74800ACEF02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Shota Kashihara";
+				TargetAttributes = {
+					CCEFBE722119F74900ACEF02 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CCEFBE6E2119F74800ACEF02 /* Build configuration list for PBXProject "Chatroom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCEFBE6A2119F74800ACEF02;
+			productRefGroup = CCEFBE742119F74900ACEF02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEFBE722119F74900ACEF02 /* Chatroom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEFBE712119F74900ACEF02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEFBE812119F74C00ACEF02 /* LaunchScreen.storyboard in Resources */,
+				CCEFBE892119F7AE00ACEF02 /* GoogleService-Info.plist in Resources */,
+				CCEFBE7E2119F74C00ACEF02 /* Assets.xcassets in Resources */,
+				CCEFBE7C2119F74900ACEF02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B54F016D3DD3F0C924F6D12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6C996CC02B4D57696BDD65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatroom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89FA9807C7FDDBD43BC3A6C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatroom/Pods-Chatroom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCEFBE6F2119F74900ACEF02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEFBE792119F74900ACEF02 /* ViewController.swift in Sources */,
+				CCEFBE772119F74900ACEF02 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCEFBE7A2119F74900ACEF02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEFBE7B2119F74900ACEF02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCEFBE7F2119F74C00ACEF02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEFBE802119F74C00ACEF02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCEFBE832119F74C00ACEF02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCEFBE842119F74C00ACEF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEFBE862119F74C00ACEF02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE6273754A6B40C35BCA9A7 /* Pods-Chatroom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TNE6426T3;
+				INFOPLIST_FILE = Chatroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCEFBE872119F74C00ACEF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7751292BD49AEF954C9BCC2A /* Pods-Chatroom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TNE6426T3;
+				INFOPLIST_FILE = Chatroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.shota.Chatroom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCEFBE6E2119F74800ACEF02 /* Build configuration list for PBXProject "Chatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEFBE832119F74C00ACEF02 /* Debug */,
+				CCEFBE842119F74C00ACEF02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEFBE852119F74C00ACEF02 /* Build configuration list for PBXNativeTarget "Chatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEFBE862119F74C00ACEF02 /* Debug */,
+				CCEFBE872119F74C00ACEF02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCEFBE6B2119F74800ACEF02 /* Project object */;
+}
