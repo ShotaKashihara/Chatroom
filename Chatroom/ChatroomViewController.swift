@@ -33,6 +33,10 @@ class ChatroomViewController: UIViewController {
         
         let inputView = ChatroomInputView.instantiate()
         self.inputBottomView = inputView
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -43,6 +47,7 @@ class ChatroomViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension ChatroomViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,5 +60,33 @@ extension ChatroomViewController: UITableViewDataSource {
             chatCell.ownTextLabel.text = "\(indexPath.row)行目だよ。"
         }
         return cell
+    }
+}
+
+// MARK: - Keyboard制御
+extension ChatroomViewController {
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double else {
+            return
+        }
+        UIView.animate(withDuration: duration) {
+            let transform = CGAffineTransform.init(translationX: 0, y: -rect.size.height)
+            self.view.transform = transform
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification){
+        let inputViewHeight = self.inputBottomView.bounds.height
+        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double else {
+            return
+        }
+        UIView.animate(withDuration: duration) {
+            let transform = CGAffineTransform.init(translationX: 0, y: -inputViewHeight)
+            self.view.transform = transform
+        }
     }
 }
