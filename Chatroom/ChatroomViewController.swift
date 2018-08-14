@@ -12,6 +12,16 @@ class ChatroomViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var inputBottomView: UIView!
+    
+    override var inputAccessoryView: UIView? {
+        return inputBottomView
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +30,9 @@ class ChatroomViewController: UIViewController {
         self.tableView.separatorStyle = .none
         self.tableView.estimatedRowHeight = 60
         self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        let inputView = ChatroomInputView.instantiate()
+        self.inputBottomView = inputView
     }
     
     override func viewDidAppear(_ animated: Bool) {
