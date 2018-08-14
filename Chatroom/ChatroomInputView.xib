@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatroomInputView" customModule="Chatroom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gQ-Zn-F3J">
+                    <rect key="frame" x="328" y="0.0" width="31" height="44"/>
+                    <state key="normal" title="送信"/>
+                    <connections>
+                        <action selector="tapSendButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="8W3-rn-KNI"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="おはよー😉" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-bB-Mes">
+                    <rect key="frame" x="16" y="4" width="296" height="36"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rEQ-bB-Mes" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-4" id="5Bm-WQ-XHX"/>
+                <constraint firstItem="rEQ-bB-Mes" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9NI-dz-UZB"/>
+                <constraint firstItem="1gQ-Zn-F3J" firstAttribute="leading" secondItem="rEQ-bB-Mes" secondAttribute="trailing" constant="16" id="DZT-Es-tLV"/>
+                <constraint firstItem="rEQ-bB-Mes" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="go3-7D-9yX"/>
+                <constraint firstItem="1gQ-Zn-F3J" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hQr-13-Qop"/>
+                <constraint firstItem="1gQ-Zn-F3J" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="imS-St-G9y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1gQ-Zn-F3J" secondAttribute="trailing" constant="16" id="jTz-0V-6JW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="textView" destination="rEQ-bB-Mes" id="4R0-jV-Vks"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-176"/>
+        </view>
+    </objects>
+</document>
