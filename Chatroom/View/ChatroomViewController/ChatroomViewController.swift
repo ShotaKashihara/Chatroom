@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension ChatroomViewController: ChatroomInputViewDelegate {
+    func tapSendButton(text: String) {
+        let newModel = OwnChatTableViewCellModel(text: text, timestamp: Date())
+        self.dataSources.append(newModel)
+        self.tableView.insertRows(at: [IndexPath(row: self.dataSources.count - 1, section: 0)], with: .automatic)
+    }
+}
+
 class ChatroomViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -35,6 +43,7 @@ class ChatroomViewController: UIViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         let inputView = ChatroomInputView.instantiate()
+        inputView.delegate = self
         self.inputBottomView = inputView
         self.topConstraint.constant = inputView.bounds.height
         

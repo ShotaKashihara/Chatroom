@@ -8,11 +8,22 @@
 
 import UIKit
 
+protocol ChatroomInputViewDelegate {
+    func tapSendButton(text: String)
+}
+
 class ChatroomInputView: UIView, NibInstantiatable {
 
     @IBOutlet weak var textView: UITextView!
     
+    var delegate: ChatroomInputViewDelegate!
+    
     @IBAction func tapSendButton(_ sender: UIButton) {
+        guard self.textView.text.count > 0 else {
+            return
+        }
+        self.delegate.tapSendButton(text: self.textView.text)
+        self.textView.text = nil
         self.textView.resignFirstResponder()
     }
 }

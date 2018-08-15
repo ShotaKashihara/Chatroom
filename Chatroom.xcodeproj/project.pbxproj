@@ -100,8 +100,8 @@
 		CC80D57D21246BB4006FB13F /* ChatroomInputView */ = {
 			isa = PBXGroup;
 			children = (
-				CC80D57421233912006FB13F /* ChatroomInputView.xib */,
 				CC80D57221233906006FB13F /* ChatroomInputView.swift */,
+				CC80D57421233912006FB13F /* ChatroomInputView.xib */,
 			);
 			path = ChatroomInputView;
 			sourceTree = "<group>";
