@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="60" id="cx4-8N-A9f" customClass="ChatTableViewCell" customModule="Chatroom" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OwnChatTableViewCell" rowHeight="60" id="cx4-8N-A9f" customClass="OwnChatTableViewCell" customModule="Chatroom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cx4-8N-A9f" id="IuB-fI-rLn">
@@ -36,8 +36,13 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4o-p0-RDu">
                                                     <rect key="frame" x="257" y="11" width="103" height="38"/>
                                                     <color key="backgroundColor" red="0.56078431370000004" green="0.81960784310000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sod-Gd-GNM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sod-Gd-GNM">
                                                     <rect key="frame" x="265" y="19" width="87" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -56,8 +61,54 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="ownTextLabel" destination="sod-Gd-GNM" id="53P-O3-8zy"/>
-                                            <outlet property="textBackgroundView" destination="z4o-p0-RDu" id="Cas-WL-n1C"/>
+                                            <outlet property="ownTextLabel" destination="sod-Gd-GNM" id="wTD-6g-K4L"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OpponentChatTableViewCell" rowHeight="60" id="pdg-7r-LYJ" customClass="OpponentChatTableViewCell" customModule="Chatroom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pdg-7r-LYJ" id="hMP-86-dTX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-Mc-xTX">
+                                                    <rect key="frame" x="61" y="11" width="103" height="38"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EO-vH-Rhg">
+                                                    <rect key="frame" x="69" y="19" width="87" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-84-nvB">
+                                                    <rect key="frame" x="15" y="11" width="38" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="4jU-NK-X5q"/>
+                                                        <constraint firstAttribute="height" constant="38" id="yk0-Oc-bib"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kOp-84-nvB" firstAttribute="top" secondItem="hMP-86-dTX" secondAttribute="topMargin" id="2gX-Gm-BK1"/>
+                                                <constraint firstItem="Gdc-Mc-xTX" firstAttribute="leading" secondItem="5EO-vH-Rhg" secondAttribute="leading" constant="-8" id="9Gm-uA-3O0"/>
+                                                <constraint firstItem="Gdc-Mc-xTX" firstAttribute="top" secondItem="5EO-vH-Rhg" secondAttribute="top" constant="-8" id="AU5-c9-Bvj"/>
+                                                <constraint firstItem="kOp-84-nvB" firstAttribute="leading" secondItem="hMP-86-dTX" secondAttribute="leadingMargin" id="Elm-Er-mzW"/>
+                                                <constraint firstItem="Gdc-Mc-xTX" firstAttribute="bottom" secondItem="5EO-vH-Rhg" secondAttribute="bottom" constant="8" id="V2q-HC-NaO"/>
+                                                <constraint firstItem="Gdc-Mc-xTX" firstAttribute="leading" secondItem="hMP-86-dTX" secondAttribute="leadingMargin" constant="46" id="ZEP-LO-I2U"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5EO-vH-Rhg" secondAttribute="bottom" constant="8" id="a3e-UN-bqb"/>
+                                                <constraint firstItem="5EO-vH-Rhg" firstAttribute="top" secondItem="hMP-86-dTX" secondAttribute="topMargin" constant="8" id="ldX-Zz-TK7"/>
+                                                <constraint firstItem="Gdc-Mc-xTX" firstAttribute="trailing" secondItem="5EO-vH-Rhg" secondAttribute="trailing" constant="8" id="xgD-aG-J1n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="opponentTextLabel" destination="5EO-vH-Rhg" id="qNC-wY-nFB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,8 +119,8 @@
                             <constraint firstItem="l0z-RC-Eih" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0o6-S4-szq"/>
                             <constraint firstItem="GFM-k4-fVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2o3-Ut-nGy"/>
                             <constraint firstItem="GFM-k4-fVM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C9M-3N-mOJ"/>
+                            <constraint firstItem="l0z-RC-Eih" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XhG-Jf-xc3"/>
                             <constraint firstItem="l0z-RC-Eih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e02-mJ-X6M"/>
-                            <constraint firstItem="l0z-RC-Eih" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kmW-WD-c9L"/>
                             <constraint firstItem="GFM-k4-fVM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qJ7-y1-TzS"/>
                             <constraint firstItem="GFM-k4-fVM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ssy-nu-Wqi"/>
                             <constraint firstItem="l0z-RC-Eih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wuH-At-1Dq"/>
@@ -77,7 +128,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="XhG-Jf-xc3" id="IjZ-0h-5TQ"/>
                         <outlet property="tableView" destination="l0z-RC-Eih" id="vMM-bD-RJw"/>
+                        <outlet property="topConstraint" destination="e02-mJ-X6M" id="j8G-mu-Lvc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,5 +140,6 @@
     </scenes>
     <resources>
         <image name="background" width="576" height="1024"/>
+        <image name="default_user_icon" width="400" height="400"/>
     </resources>
 </document>
