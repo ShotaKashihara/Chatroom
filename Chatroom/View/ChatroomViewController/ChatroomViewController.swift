@@ -7,22 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
-extension ChatroomViewController: ChatroomInputViewDelegate {
-    func tapSendButton(text: String) {
-        let newModel = OwnChatTableViewCellModel(text: text, timestamp: Date())
-        self.dataSources.append(newModel)
-        self.tableView.insertRows(at: [IndexPath(row: self.dataSources.count - 1, section: 0)], with: .automatic)
+class ChatroomViewController: UIViewController, StoryboardInstantiatable {
+    static var instantiateType: StoryboardInstantiateType {
+        return .initial
     }
-}
-
-class ChatroomViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
     var dataSources: [ChatTableViewCellModel] = []
+    
+    var opponentId: String! 
     
     var inputBottomView: UIView!
     override var inputAccessoryView: UIView? {
@@ -49,6 +47,16 @@ class ChatroomViewController: UIViewController {
         
         // キーボード制御の拡張
         self.registerKeyboardNotification()
+        
+        // Observer定義
+        NotificationCenter.default.addObserver(forName: ChatRepository.refreshNotificationName, object: nil, queue: nil) { notification in
+            print("\(notification)")
+            guard let documents = notification.object as? [QueryDocumentSnapshot] else {
+                return
+            }
+        }
+        // Listener開始
+        ChatRepository.shared.listen(self.opponentId)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,5 +94,13 @@ extension ChatroomViewController: UITableViewDataSource {
         default:
             abort()
         }
+    }
+}
+
+// MARK: - 送信ボタン
+extension ChatroomViewController: ChatroomInputViewDelegate {
+    func tapSendButton(text: String) {
+//        let newChat = Chat(opponentId: self.opponentId, message: text)
+//        ChatRepository.shared.save(newChat)
     }
 }
